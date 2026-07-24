@@ -1,83 +1,77 @@
-## Projects_Using_KDD_SEMMA_CRISP_DM - CMPE -255
-This repository demonstrates the application of three popular methodologies for data mining and machine learning projects: CRISP-DM, KDD, and SEMMA. Each framework provides a structured workflow for extracting insights and building predictive models. The projects included here showcase the practical use of these methodologies with Python implementations.
+# Data Mining Methodologies in Practice — CMPE 255
+
+This repository compares three widely used data mining and machine learning workflows—**CRISP-DM**, **KDD**, and **SEMMA**—through hands-on Python projects. Each project applies one methodology end-to-end on a real dataset, from data exploration through model evaluation and documentation.
+
+## Projects
+
+| Folder | Methodology | Use Case | Dataset |
+|--------|-------------|----------|---------|
+| [CRISP-DM_Customer_Lifetime_Value_Prediction](CRISP-DM_Customer_Lifetime_Value_Prediction/) | CRISP-DM | Predict customer lifetime value (CLV) for retail | Online Retail II |
+| [KDD_Titanic_Survival_Prediction](KDD_Titanic_Survival_Prediction/) | KDD | Binary classification of passenger survival | Titanic |
+| [SEMMA_Iris_Species_Classification](SEMMA_Iris_Species_Classification/) | SEMMA | Multi-class flower species classification | Iris |
+
+## Methodology Overview
 
 ### CRISP-DM (Cross-Industry Standard Process for Data Mining)
-CRISP-DM is one of the most widely adopted frameworks in data science. It consists of six iterative and adaptable phases:
-1) Business Understanding – Define objectives, success criteria, and project plan.
-2) Data Understanding – Collect, describe, and explore data while assessing quality.
-3) Data Preparation – Clean, transform, and prepare datasets for modeling.
-4) Modeling – Apply machine learning models, tune parameters, and test performance.
-5) Evaluation – Validate models against business goals and decide next steps.
-6) Deployment – Deliver results via reports, dashboards, or integrated systems.
+
+A six-phase, business-oriented process that is iterative and adaptable:
+
+1. **Business Understanding** — Define objectives, success criteria, and project plan
+2. **Data Understanding** — Collect, describe, explore, and assess data quality
+3. **Data Preparation** — Clean, transform, and engineer features for modeling
+4. **Modeling** — Select algorithms, train models, and tune hyperparameters
+5. **Evaluation** — Validate results against business goals
+6. **Deployment** — Deliver insights via reports, dashboards, or production systems
 
 ### KDD (Knowledge Discovery in Databases)
-The KDD process provides a systematic approach to discovering useful knowledge from raw data. The six key stages are:
-1) Data Selection – Identify relevant data sources.
-2) Data Preprocessing – Handle noise, missing values, and inconsistencies.
-3) Data Transformation – Format and structure data for mining.
-4) Data Mining – Apply algorithms to discover meaningful patterns.
-5) Pattern Evaluation – Assess and interpret discovered knowledge.
-6) Knowledge Representation – Present insights in an understandable form.
+
+A six-stage pipeline focused on extracting actionable knowledge from data:
+
+1. **Data Selection** — Identify relevant data sources
+2. **Data Preprocessing** — Handle noise, missing values, and inconsistencies
+3. **Data Transformation** — Format and structure data for mining
+4. **Data Mining** — Apply algorithms to discover patterns
+5. **Pattern Evaluation** — Assess and interpret discovered knowledge
+6. **Knowledge Representation** — Present findings in an understandable form
 
 ### SEMMA (Sample, Explore, Modify, Model, Assess)
-SEMMA, developed by SAS, focuses on model-building through a cycle of five steps:
-1) Sample – Select representative data (Iris dataset).
-2) Explore – Perform EDA to identify trends and relationships.
-3) Modify – Clean, transform, and scale features.
-4) Model – Build and train models (Random Forest Classifier).
-5) Assess – Evaluate performance using accuracy and confusion matrix.
 
-### CRISP - DM
+SAS's five-step model-building cycle:
 
-CRISP-DM stands for Cross-Industry Standard Process for Data Mining, a widely used methodology for data mining and machine learning projects. It provides a structured approach to planning and executing a data science project. The process consists of six major phases, which are iterative and adaptable to various project types. Here’s a brief overview of each phase:
-#### 1. Business Understanding:
-   Focuses on understanding the project objectives and requirements from a business perspective.
-   Key tasks: Define the business objectives, assess the situation, define success criteria, and create a project plan.
-#### 2. Data Understanding:
-   Involves gathering data and familiarizing with it.
-   Key tasks: Collect initial data, describe the data, explore the data, and verify its quality.
-#### 3. Data Preparation:
-   Covers all activities needed to construct the final dataset for modeling.
-   Key tasks: Clean the data, transform variables, handle missing values, and prepare datasets for analysis.
-#### 4. Modeling:
-   Focuses on selecting and applying various machine learning models to the prepared data.
-   Key tasks: Select modeling techniques, train models, tune parameters, and evaluate performance.
-#### 5. Evaluation:
-   After modeling, assess the models in the context of the business objectives.
-   Key tasks: Review models, ensure they meet business goals, and decide on the next steps.
-#### 6. Deployment:
-   Involves making the results available in a practical and useful way.
-   Key tasks: Create a deployment plan, generate reports, implement model monitoring, and ensure successful integration into the business.   
-CRISP-DM is an iterative process, meaning insights or issues found during one phase may lead to revisiting earlier phases.
+1. **Sample** — Select representative training and test data
+2. **Explore** — Perform EDA to uncover trends and relationships
+3. **Modify** — Clean, transform, and scale features
+4. **Model** — Build and train predictive models
+5. **Assess** — Evaluate performance with metrics and visualizations
 
-##### I have written medium article on this. Link: https://medium.com/me/stories/public
+## Repository Structure
 
+```
+.
+├── CRISP-DM_Customer_Lifetime_Value_Prediction/
+│   ├── CustomerLifetimeValue_CRISP_DM.ipynb
+│   ├── Research_paper_CRISP_DM.pdf
+│   └── research_paper_latex_source
+├── KDD_Titanic_Survival_Prediction/
+│   ├── Titanic_Survival_Prediction_KDD.ipynb
+│   ├── Research_paper_KDD.pdf
+│   └── research_paper_latex_source
+├── SEMMA_Iris_Species_Classification/
+│   ├── SEMMA_Iris_Classification_.ipynb
+│   ├── SEMMA.pdf
+│   └── research_paper_latex_source
+└── README.md
+```
 
+## Getting Started
 
-### Predicting Customer Churn: Applying the KDD Process Using Python
+Each project folder contains its own README with dataset requirements, methodology mapping, and notebook instructions. Notebooks were developed for Google Colab; update file paths (e.g., `/content/...`) when running locally.
 
-The KDD process is a powerful approach for extracting valuable insights from large datasets. In this article, we’ll walk through a step-by-step implementation of KDD, applied to customer churn prediction using Python. We’ll explore each phase of the process, from data selection to knowledge representation, using the Titanic dataset as an example. By the end, you’ll understand how to implement the KDD methodology in real-world machine learning projects.
-#### What is the KDD Process?
-The KDD process consists of six essential stages that guide the analysis from raw data to actionable insights. These stages are:
-1. Data Selection: Identifying relevant data.
-2. Data Preprocessing: Cleaning and preparing data.
-3. Data Transformation: Structuring data for analysis.
-4. Data Mining: Applying algorithms to extract patterns.
-5. Pattern Evaluation: Interpreting the results.
-6. Knowledge Representation: Presenting the findings.
-##### I have written medium article on this. Link: [https://medium.com/me/stories/public](https://medium.com/@shrutiebony/crisp-dm-semma-and-kdd-6244a4661e04)
+## Related Writing
 
+A companion overview of these three methodologies is available on Medium:  
+[CRISP-DM, SEMMA, and KDD](https://medium.com/@shrutiebony/crisp-dm-semma-and-kdd-6244a4661e04)
 
-### Mastering Data Mining with SEMMA: Iris Flower Classification
+## Course
 
-This project demonstrates the application of the SEMMA methodology (Sample, Explore, Modify, Model, Assess) in a practical machine learning workflow using Python. The project involves building a Random Forest classification model to predict the species of an iris flower based on its sepal and petal dimensions.
-The entire process follows the SEMMA framework:
-1. Sample: We use the Iris dataset, a popular dataset for classification tasks.
-2. Explore: Exploratory Data Analysis (EDA) is conducted to uncover patterns and relationships between features.
-3. Modify: Data is cleaned, split into training and testing sets, and features are scaled for optimal model performance.
-4. Model: A Random Forest classifier is trained on the data.
-5. Assess: Model performance is evaluated using metrics like accuracy and confusion matrix.
-
-##### I have written medium article on this. Link: [https://medium.com/me/stories/public](https://medium.com/@shrutiebony/crisp-dm-semma-and-kdd-6244a4661e04)
-
-
+Developed for **CMPE 255** — Data Mining and Machine Learning.
