@@ -1,4 +1,5 @@
-# Data Mining Methodologies in Practice — CMPE 255
+### Hands-on comparison of CRISP-DM, KDD, and SEMMA through Python ML projects
+
 
 This repository compares three widely used data mining and machine learning workflows—**CRISP-DM**, **KDD**, and **SEMMA**—through hands-on Python projects. Each project applies one methodology end-to-end on a real dataset, from data exploration through model evaluation and documentation.
 
@@ -71,7 +72,3 @@ Each project folder contains its own README with dataset requirements, methodolo
 
 A companion overview of these three methodologies is available on Medium:  
 [CRISP-DM, SEMMA, and KDD](https://medium.com/@shrutiebony/crisp-dm-semma-and-kdd-6244a4661e04)
-
-## Course
-
-Developed for **CMPE 255** — Data Mining and Machine Learning.
